@@ -32,10 +32,7 @@ public class Usercontroller {
 	@Autowired
 	UserOrchestration userOrchestration;
 	
-	@GetMapping
-	public String getUser() {
-		return "get user was called";
-	}
+	
 	@PostMapping
 	public UserEntity creatUser(@RequestBody  UserEntity userEntity) {
 		userEntity=userOrchestration.orchestration(userEntity);

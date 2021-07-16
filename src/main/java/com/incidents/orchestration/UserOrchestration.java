@@ -35,7 +35,7 @@ public class UserOrchestration {
 	public UserEntity orchestration(@RequestBody  UserEntity userEntity) {
 
 	UserDto userDto = new UserDto();
-    userEntity=mapper.dtoToEntity(userDto, UserEntity.class);
+   userDto=mapper.entityToDto(userEntity, UserDto.class);
 
 	
 	UserDto creatUser = userService.creatUser(userDto);
@@ -43,6 +43,8 @@ public class UserOrchestration {
 	
 	return userEntity;
 }
+	
+
 	
 	
 }
