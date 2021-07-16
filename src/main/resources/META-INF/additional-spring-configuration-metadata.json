@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "idsspring.datasource.username",
+  "type": "java.lang.String",
+  "description": "A description for 'idsspring.datasource.username'"
+}]}
